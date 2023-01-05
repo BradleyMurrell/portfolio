@@ -196,6 +196,25 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.skill-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  .skill-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #1e1e1e, #111);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .skill-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -246,3 +265,12 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-skills {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(30, 30, 30, 0.8), rgba(17, 17, 17, 0.8)), url(../img/background-1.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem; }
+  .section-skills > * {
+    transform: skewY(7deg); }
