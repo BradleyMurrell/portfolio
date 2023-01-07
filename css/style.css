@@ -169,6 +169,34 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    color: #fff;
+    font-size: 2rem;
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #5f5f5f, #111); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -208,7 +236,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #1e1e1e, #111);
+    background-image: linear-gradient(to right, #5f5f5f, #111);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
@@ -243,7 +271,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(30, 30, 30, 0.8), rgba(17, 17, 17, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(95, 95, 95, 0.8), rgba(17, 17, 17, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -268,9 +296,14 @@ body {
 
 .section-skills {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(30, 30, 30, 0.8), rgba(17, 17, 17, 0.8)), url(../img/background-1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(95, 95, 95, 0.8), rgba(17, 17, 17, 0.8)), url(../img/background-1.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
   .section-skills > * {
     transform: skewY(7deg); }
+
+.section-projects {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -12rem; }
