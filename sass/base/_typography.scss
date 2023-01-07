@@ -17,7 +17,7 @@ body {
         display: block;
         font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 3.5rem;
+        letter-spacing: 2rem;
     
         animation-name: moveInLeft;
         animation-duration: 1s;
@@ -26,9 +26,9 @@ body {
     
     &--sub {
         display: block;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 5.3rem;
+        letter-spacing: 3rem;
     
         animation-name: moveInRight;
         animation-duration: 1s;
