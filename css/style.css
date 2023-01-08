@@ -132,6 +132,14 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
+
+.btn--black {
+  background-color: #000;
+  color: #fff; }
+  .btn--black::after {
+    background-color: #000; }
 
 .btn::after {
   content: "";
