@@ -168,10 +168,10 @@ body {
     background-color: #fff; }
 
 .btn--black {
-  background-color: #000;
+  background-color: #2e4159;
   color: #fff; }
   .btn--black::after {
-    background-color: #000; }
+    background-color: #2e4159; }
 
 .btn::after {
   content: "";
