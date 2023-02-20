@@ -21,7 +21,7 @@
     &__shape {
         width: 15rem;
         height: 15rem;
-        background-color: $color-black;
+        background-color: $color-white;
         float: left;
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
@@ -34,15 +34,21 @@
     }
 
     &__img {
-        height: 100%;
-        width: 100%;
-        transform: scale(1);
+        width: 65%;
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        transform: translateX(-4rem) scale(1.4);
         backface-visibility: hidden;
         transition: all .5s;
     }
 
     &__text {
         transform: skewX(12deg);
+
+        @include respond(phone) {
+            transform: skewX(0);
+        }
     }
 
     &__caption {
@@ -50,7 +56,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, 20%);
-        color: $color_white;
+        color: $color_black;
         text-transform: uppercase;
         font-size: 1.7rem;
         text-align: center;
@@ -65,7 +71,7 @@
     }
 
     &:hover &__img {
-        transform: scale(.6);
-        filter: blur(5px) brightness(50%);
+        transform: scale(.01);
+        filter: blur(5px) brightness(100%);
     }
 }

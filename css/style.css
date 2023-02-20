@@ -397,7 +397,7 @@ body {
   .employment__shape {
     width: 15rem;
     height: 15rem;
-    background-color: #000;
+    background-color: #fff;
     float: left;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
@@ -407,19 +407,24 @@ body {
       .employment__shape {
         transform: translateX(-3rem) skewX(0); } }
   .employment__img {
-    height: 100%;
-    width: 100%;
-    transform: scale(1);
+    width: 65%;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translateX(-4rem) scale(1.4);
     backface-visibility: hidden;
     transition: all .5s; }
   .employment__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .employment__text {
+        transform: skewX(0); } }
   .employment__caption {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     font-size: 1.7rem;
     text-align: center;
@@ -430,8 +435,8 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .employment:hover .employment__img {
-    transform: scale(0.6);
-    filter: blur(5px) brightness(50%); }
+    transform: scale(0.01);
+    filter: blur(5px) brightness(100%); }
 
 .skill-box {
   background-color: rgba(255, 255, 255, 0.8);
