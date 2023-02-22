@@ -438,6 +438,98 @@ body {
     transform: scale(0.01);
     filter: blur(5px) brightness(100%); }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
+  .popup__left {
+    width: 50%;
+    display: table-cell; }
+  .popup__right {
+    width: 50%;
+    display: table-cell; }
+  .popup .timeline {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+  .popup .timeline ul {
+    list-style-type: none;
+    border-left: 2px solid #2e4159;
+    padding: 10px 5px; }
+  .popup .timeline ul li {
+    padding: 20px 20px;
+    position: relative; }
+  .popup .timeline ul li span {
+    display: inline-block;
+    background-color: #8f8ebf;
+    border-radius: 25px;
+    padding: 2px 5px;
+    font-size: 15px;
+    text-align: center; }
+  .popup .timeline ul li .content h3 {
+    color: #8f8ebf;
+    font-size: 17px;
+    padding-top: 5px; }
+  .popup .timeline ul li .content p {
+    padding: 5px 0px 15px 0px;
+    font-size: 15px; }
+  .popup .timeline ul li:before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #8f8ebf;
+    border-radius: 50%;
+    left: -11px;
+    top: 28px;
+    transition: 0.5s; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    color: #777;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 1;
+    z-index: 99999; }
+  .popup__close:hover {
+    color: #5f5f5f; }
+
 .skill-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
