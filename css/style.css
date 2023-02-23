@@ -93,10 +93,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #777, #111);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #777;
   letter-spacing: 2px;
   transform: all .2s; }
   @media (max-width: 56.25em) {
