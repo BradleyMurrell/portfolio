@@ -374,6 +374,67 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.education {
+  height: 21rem;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 3rem 3rem 3rem 6rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .education {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .education {
+      transform: skewX(0); } }
+  .education__shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: #fff;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative; }
+    @media (max-width: 37.5em) {
+      .education__shape {
+        transform: translateX(-3rem) skewX(0); } }
+  .education__img {
+    width: 50%;
+    position: absolute;
+    top: 32%;
+    left: 52%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s; }
+  .education__text {
+    transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .education__text {
+        transform: skewX(0); } }
+  .education__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .education:hover .education__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .education:hover .education__img {
+    transform: scale(0.01);
+    filter: blur(5px) brightness(100%); }
+
 .employment {
   height: 21rem;
   margin: 0 auto;
@@ -798,6 +859,14 @@ body {
   padding: 15rem 0; }
   @media (max-width: 56.25em) {
     .section-employment {
+      padding: 10rem 0; } }
+
+.section-education {
+  position: relative;
+  padding: 15rem 0;
+  background-color: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .section-education {
       padding: 10rem 0; } }
 
 .section-contact {
