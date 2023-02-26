@@ -116,11 +116,6 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
-.contact-text {
-  font-size: 2rem; }
-  .contact-text:not(:last-child) {
-    margin-bottom: 3rem; }
-
 .u-center-text {
   text-align: center !important; }
 
@@ -911,3 +906,10 @@ body {
   .contact__form {
     width: 50%;
     padding: 6rem; }
+  .contact__list {
+    list-style: none; }
+  .contact__text {
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+  .contact__link:link, .contact__link:visited {
+    text-decoration: none; }

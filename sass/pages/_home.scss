@@ -92,4 +92,22 @@
         width: 50%;
         padding: 6rem;
     }
+
+    &__list {
+        list-style: none;
+        
+    }
+
+    &__text {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+        }
+    }
+    
 }
