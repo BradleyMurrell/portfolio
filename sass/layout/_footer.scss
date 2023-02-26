@@ -20,5 +20,9 @@
     &__logo {
         width: 15rem;
         height: auto;
+
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+        }
     }
 }
