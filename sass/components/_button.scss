@@ -91,3 +91,19 @@
         transform: translateY(0);
     }
 }
+
+.btn-text--white {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-white;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-white;
+    }
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-primary-dark;
+    }
+}

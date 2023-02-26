@@ -19,7 +19,7 @@
     &__content {
         @include absCenter;
 
-        width: 50%;
+        width: 60%;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
         display: table;
@@ -49,8 +49,9 @@
 
     .timeline ul {
         list-style-type: none;
-        border-left: 2px solid $color-secondary-dark;
-        padding: 10px 5px;
+        border-left: 2px solid $color-secondary-light;
+        padding: 1rem;
+        margin-left: 3rem;
     }
     
     .timeline ul li {
@@ -63,29 +64,29 @@
         background-color: $color-secondary-light;
         border-radius: 25px;
         padding: 2px 5px;
-        font-size: 15px;
+        font-size: $default-font-size;
         text-align: center;
     }
 
     .timeline ul li .content h3 {
         color: $color-secondary-light;
-        font-size: 17px;
+        font-size: $default-font-size;
         padding-top: 5px;
     }
 
     .timeline ul li .content p {
         padding: 5px 0px 15px 0px;
-        font-size: 15px;
+        font-size: $default-font-size;
     }
 
     .timeline ul li:before {
         position: absolute;
         content: "";
-        width: 10px;
-        height: 10px;
+        width: 1rem;
+        height: 1rem;
         background-color: $color-secondary-light;
         border-radius: 50%;
-        left: -11px;
+        left: -1.6rem;
         top: 28px;
         transition: 0.5s;
     }

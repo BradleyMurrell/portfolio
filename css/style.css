@@ -212,6 +212,17 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.btn-text--white:link, .btn-text--white:visited {
+  font-size: 1.6rem;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #fff; }
+
+.btn-text--white:hover {
+  background-color: #fff;
+  color: #111; }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -517,7 +528,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 60%;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
@@ -539,8 +550,9 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
   .popup .timeline ul {
     list-style-type: none;
-    border-left: 2px solid #2e4159;
-    padding: 10px 5px; }
+    border-left: 2px solid #8f8ebf;
+    padding: 1rem;
+    margin-left: 3rem; }
   .popup .timeline ul li {
     padding: 20px 20px;
     position: relative; }
@@ -549,23 +561,23 @@ body {
     background-color: #8f8ebf;
     border-radius: 25px;
     padding: 2px 5px;
-    font-size: 15px;
+    font-size: 1.6rem;
     text-align: center; }
   .popup .timeline ul li .content h3 {
     color: #8f8ebf;
-    font-size: 17px;
+    font-size: 1.6rem;
     padding-top: 5px; }
   .popup .timeline ul li .content p {
     padding: 5px 0px 15px 0px;
-    font-size: 15px; }
+    font-size: 1.6rem; }
   .popup .timeline ul li:before {
     position: absolute;
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 1rem;
+    height: 1rem;
     background-color: #8f8ebf;
     border-radius: 50%;
-    left: -11px;
+    left: -1.6rem;
     top: 28px;
     transition: 0.5s; }
   .popup:target {
