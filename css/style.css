@@ -116,6 +116,11 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.contact-text {
+  font-size: 2rem; }
+  .contact-text:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -244,7 +249,7 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #5f5f5f, #111); }
+        background-image: linear-gradient(to right bottom, #8f8ebf, #2e4159); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {

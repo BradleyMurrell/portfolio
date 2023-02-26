@@ -81,3 +81,11 @@ body {
         margin-bottom: 3rem;
     }
 }
+
+.contact-text {
+    font-size: 2rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
