@@ -20,75 +20,56 @@
         @include absCenter;
 
         width: 60%;
+        background-color: $color-grey-dark-3;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
-        display: table;
         overflow: hidden;
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
+
+        @include respond(tab-port) {
+            width: 90%;
+            overflow-y: auto;
+            max-height: 90%;
+        }
     }
 
-    &__left {
-        width: 50%;
-        display: table-cell;
+    h2{
+        color: $color-red;
+        font-weight: 500;
+      }
+      
+    h3{
+        font-weight: 500;
+        margin: 0.5rem 0;
+      }
+
+    &__grid {
+
+        margin: 2rem;
+
+        @media screen and (min-width: 600px) {
+            display: grid;
+            grid-auto-flow: column;
+            grid-gap: 1rem;
+        }
+
+        @media screen and (min-width: 1025px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
-    &__right {
-        width: 50%;
-        display: table-cell;
-    }
+    article {
+        p {
+            font-size: 1rem;
+            color: $color-grey-light-3;
+        }
 
-    .timeline {
-        width: 100%;
-        background-color: $color-grey-dark-3;
         color: $color-white;
-        padding: 30px 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .timeline ul {
-        list-style-type: none;
-        border-left: 2px solid $color-secondary-light;
-        padding: 1rem;
-        margin-left: 3rem;
-    }
-    
-    .timeline ul li {
-        padding: 20px 20px;
-        position: relative;
-    }
-
-    .timeline ul li span {
-        display: inline-block;
-        background-color: $color-secondary-light;
-        border-radius: 25px;
-        padding: 2px 5px;
-        font-size: $default-font-size;
-        text-align: center;
-    }
-
-    .timeline ul li .content h3 {
-        color: $color-secondary-light;
-        font-size: $default-font-size;
-        padding-top: 5px;
-    }
-
-    .timeline ul li .content p {
-        padding: 5px 0px 15px 0px;
-        font-size: $default-font-size;
-    }
-
-    .timeline ul li:before {
-        position: absolute;
-        content: "";
-        width: 1rem;
-        height: 1rem;
-        background-color: $color-secondary-light;
-        border-radius: 50%;
-        left: -1.6rem;
-        top: 28px;
-        transition: 0.5s;
+        padding-bottom: 2rem;
+        border-bottom: $border;
+        margin-bottom: 2rem;
     }
 
     //open state
@@ -103,6 +84,7 @@
     }
 
     &__close {
+
         &:link,
         &:visited {
             color: $color-grey-dark;
@@ -118,7 +100,7 @@
         }
 
         &:hover {
-            color: $color-primary-light;
+            color: $color-white;
         }
     }
 }
