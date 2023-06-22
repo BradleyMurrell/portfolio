@@ -905,4 +905,16 @@ body {
     font-size: 2rem;
     margin-bottom: 3rem; }
   .contact__link:link, .contact__link:visited {
-    text-decoration: none; }
+    color: #111;
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px;
+    transition: all .2s; }
+  .contact__link:hover {
+    background-color: #111;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); }
+  .contact__link:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0); }
